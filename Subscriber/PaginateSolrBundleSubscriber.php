@@ -48,13 +48,13 @@ class PaginateSolrBundleSubscriber implements EventSubscriberInterface
                 $entity = $query->getEntity();
                 $entities = [];
 
-                $event->items  = $solrResult->getIterator();
                 $event->count  = $solrResult->getNumFound();
 
                 foreach ($solrResult as $document) {
                     $entities[] = $this->entityMapper->toEntity($document, $entity);
                 }
 
+                $event->items = $entities;
                 $event->setCustomPaginationParameter('result', $entities);
                 $event->stopPropagation();
             }

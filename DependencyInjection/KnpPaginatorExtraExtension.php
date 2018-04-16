@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\Loader;
 /**
  * Class Martin1982KnpPaginatorExtraExtension
  */
-class Martin1982KnpPaginatorExtraExtension extends Extension
+class KnpPaginatorExtraExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -24,7 +24,7 @@ class Martin1982KnpPaginatorExtraExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $configs[] = 'paginate.yml';
+        $configs = ['paginate.yml'];
 
         foreach ($configs as $config) {
             $loader->load($config);
