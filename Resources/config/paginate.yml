@@ -1,0 +1,7 @@
+services:
+    martin1982.paginator.extra.solr:
+        class: Martin1982\KnpPaginatorExtraBundle\Subscriber\PaginateSolrBundleSubscriber
+        arguments:
+            - "@solr.doctrine.entity_mapper"
+        tags:
+            - "knp_paginator.subscriber"

@@ -1,0 +1,22 @@
+{
+    "name": "martin1982/knp-paginator-extra-bundle",
+    "description": "Extra pagination subscribers for the KNP Paginator bundle",
+    "type": "bundle",
+    "require": {
+        "php": ">=7.0",
+        "knplabs/knp-paginator-bundle": "^2.7",
+        "symfony/http-kernel": "^2.8|^3.4",
+        "symfony/event-dispatcher": "^2.8|^3.4",
+        "floriansemm/solr-bundle": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {"Martin1982\\KnpPaginatorExtraBundle\\": ""}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin de Keijzer",
+            "email": "martin.dekeijzer+paginatorextrabundle@gmail.com"
+        }
+    ]
+}
