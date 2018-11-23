@@ -5,8 +5,8 @@
     "require": {
         "php": ">=7.0",
         "knplabs/knp-paginator-bundle": "^2.7",
-        "symfony/http-kernel": "^2.8|^3.4",
-        "symfony/event-dispatcher": "^2.8|^3.4",
+        "symfony/http-kernel": "^2.8|^3.4|^4.0",
+        "symfony/event-dispatcher": "^2.8|^3.4|^4.0",
         "floriansemm/solr-bundle": "^1.6"
     },
     "autoload": {
