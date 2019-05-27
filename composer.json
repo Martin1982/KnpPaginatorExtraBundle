@@ -11,7 +11,7 @@
     },
     "require-dev": {
         "floriansemm/solr-bundle": "^1.6"        
-    }
+    },
     "autoload": {
         "psr-4": {"Martin1982\\KnpPaginatorExtraBundle\\": ""}
     },
